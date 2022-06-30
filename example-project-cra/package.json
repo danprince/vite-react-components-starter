@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.14.3",
+    "@react-three/fiber": "^8.0.27",
+    "@react-three/xr": "^3.5.0",
+    "my-package": "link:../",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.1",
-    "my-package": "link:../"
+    "three": "^0.142.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,5 +1,6 @@
 {
   "version": "0.0.0",
+  "license": "MIT",
   "name": "my-package",
   "description": "Vite React Component Library",
   "main": "./dist/my-package.umd.js",
@@ -9,7 +10,8 @@
     "dev": "ladle dev",
     "prebuild": "rm -r dist",
     "build": "vite build && tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "link-peer-deps": "npm link ./example-project-cra/node_modules/{react,react-dom,three,@react-three/{fiber,drei}}"
   },
   "peerDependencies": {
     "react": ">=17.0.0"
