@@ -11,10 +11,11 @@
     "prebuild": "rm -r dist",
     "build": "vite build && tsc",
     "test": "vitest",
-    "link-peer-deps": "npm link ./example-project-cra/node_modules/{react,react-dom,three,@react-three/{fiber,drei}}"
+    "link-peer-deps": "npm link ./example-project-cra/node_modules/{react,react-dom,three,@react-three/{fiber,drei}}",
+    "postlink-peer-deps": "ln -s ../../example-project-cra/node_modules/@react-three/xr ./node_modules/@react-three/xr"
   },
   "peerDependencies": {
-    "react": ">=17.0.0"
+    "react": ">=18.0.0"
   },
   "devDependencies": {
     "@ladle/react": "^1.2.0",
