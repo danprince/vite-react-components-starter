@@ -1,8 +1,11 @@
-import * as React from "react";
 import { FC, useState } from "react";
 
-export const Counter: FC = () => {
-  let [count, setCount] = useState(0);
+interface CounterProps {
+  initialValue?: number;
+}
+
+export const Counter: FC<CounterProps> = ({ initialValue = 0 }) => {
+  let [count, setCount] = useState(initialValue);
   let inc = () => setCount(n => n + 1);
   let dec = () => setCount(n => n - 1);
 
